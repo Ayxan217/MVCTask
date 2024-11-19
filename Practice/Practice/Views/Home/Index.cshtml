@@ -1,0 +1,11 @@
+﻿@using Practice.Models
+@model List<Product>
+
+
+<ul>
+    @foreach(var product in Model)
+    {
+        <li style="font-size:25px">@product.Id @product.Name @product.Category <span style="color:red">Qiymet:</span>  @product.Price <span style="color:red">Endirim:</span> @product.DiscountPrice @product.Color </li>
+    }
+
+</ul>
